@@ -4,46 +4,62 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "188.114.97.6",
+      "server": "ccs2g.pai50288.uk",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "www.pleadcourt.org",
+        "server_name": "ccs2g.pai50288.uk",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/pai50288"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "172.67.161.144",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "www.pleadcourt.org"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "172.67.161.144",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "www.pleadcourt.org"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -53,7 +69,8 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ]
     },
     {
@@ -61,7 +78,8 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
