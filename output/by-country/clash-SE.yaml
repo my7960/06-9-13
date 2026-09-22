@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 45.38.139.23
-  port: 8443
+  server: 193.42.39.10
+  port: 33743
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jumping/class/bt?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
