@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "199.232.78.170",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe",
+      "server": "199.232.78.188",
       "server_port": 443,
       "password": "mitivpn",
       "tls": {
@@ -23,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "@mehrosabiran",
+        "path": "/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/NLSus---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN",
         "headers": {
-          "Host": "mitivpn---de--s---mitivpn-11.global.ssl.fastly.net"
+          "Host": "mitivpn---gb--s---mitivpn-1.global.ssl.fastly.net"
         }
       }
     },
@@ -34,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
