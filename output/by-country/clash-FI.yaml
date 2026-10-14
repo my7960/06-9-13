@@ -5,25 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 152.233.71.81
-  port: 443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
-  flow: xtls-rprx-vision
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: brointelengence.com
-  client-fingerprint: random
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 185.103.110.66
-  port: 18280
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 109.172.54.135
   port: 8444
@@ -39,23 +37,24 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 95.216.27.15
-  port: 2053
+  server: 79.175.136.238
+  port: 7879
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
   tls: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
+    short-id: 63ca289314edc51b
+  servername: account.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: 185.103.110.68
+  port: 18283
   udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 proxy-groups:
 - name: PROXIES
   type: select
