@@ -5,7 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 奥地利 (Austria) 01 - xiaohe
-  server: 189.74.115.16
+  server: 82.110.60.9
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  server: api.mediakaskad.cc
   port: 443
   udp: true
   type: vless
@@ -16,14 +23,7 @@ proxies:
     public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
     short-id: a8
   servername: api.mediakaskad.cc
-  client-fingerprint: firefox
-- name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 82.110.60.9
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
