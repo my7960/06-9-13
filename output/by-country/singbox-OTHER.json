@@ -6,20 +6,15 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "cf.0sm.com",
-      "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "server": "www.asamping.ir",
+      "server_port": 2095,
+      "uuid": "a55cdc40-5af5-4f02-9a46-41685120fe6f",
       "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org",
-        "insecure": false
-      },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/",
         "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
+          "Host": "www.asamping.ir"
         }
       }
     },
