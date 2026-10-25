@@ -5,22 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "195.123.227.162",
-      "server_port": 443,
-      "uuid": "7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "62.133.63.45",
+      "server_port": 8444,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
       "tls": {
         "enabled": true,
-        "server_name": "zbfkmgdg8.hat.onl",
-        "insecure": false,
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "hls-vod.ohql91f.segment-26-v1-a1.ts"
+        "service_name": "GunService"
       }
     },
     {
@@ -28,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
