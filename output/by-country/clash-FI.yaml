@@ -13,22 +13,11 @@ proxies:
   tls: true
   servername: 45-149-147-213.sslip.io
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: kobedin-server1-vless
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 45.149.147.213
   port: 4444
   udp: true
@@ -39,6 +28,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: kobedin-server1-trojan
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 77.42.12.225
   port: 443
@@ -55,7 +55,19 @@ proxies:
   grpc-opts:
     grpc-service-name: f345a414c040
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 65.109.212.193
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: hw3.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
@@ -68,33 +80,19 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 196.196.204.180
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  uuid: b223d6cf-6f94-4889-8bcf-263c15881006
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-    short-id: 023a1e6ffc32be10
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 191.44.114.179
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st33614.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: timeline.www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
