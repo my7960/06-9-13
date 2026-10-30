@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 172.66.44.211
-  port: 2083
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: n04.jinggai.online
+  port: 8443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
   tls: true
-  servername: wk1.f1w.de5.net
+  servername: n04.jinggai.online
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /nvl-n04-ws/e0577fe8fd7c8823
     headers:
-      Host: wk1.f1w.de5.net
+      Host: n04.jinggai.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES

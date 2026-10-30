@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 65.109.210.221
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,19 +30,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.144.52.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-  tls: true
-  servername: b.fi-1.bnc-gt.co.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 65.109.211.81
   port: 465
@@ -44,29 +46,40 @@ proxies:
     headers:
       Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 65.109.210.221
-  port: 465
+  server: 45.144.52.187
+  port: 443
   udp: true
   type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
   tls: true
-  servername: hw3.divarkhaghazi.com.
+  servername: b.fi-1.bnc-gt.co.uk
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 46.62.204.134
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: cd0.bmi.ir.kolman.com.de
-  port: 80
+    path: /assignment
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 46.62.204.134
+  port: 443
   udp: true
-  type: vmess
-  uuid: 2da85937-93d9-4509-8491-63b1921cf447
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +90,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +101,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
