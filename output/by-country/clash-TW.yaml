@@ -29,9 +29,12 @@ proxies:
   tls: true
   servername: n04.jinggai.online
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /nvl-n04-ws/e0577fe8fd7c8823
+    headers:
+      Host: n04.jinggai.online
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
   server: 60.248.219.78
   port: 443
