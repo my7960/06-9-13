@@ -4,22 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "www.shopify.com",
+      "server": "104.16.10.234",
       "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "guanwang.awsno.com",
+        "server_name": "jp3.yohototo.top",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "guanwang.awsno.com"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
